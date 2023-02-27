@@ -1,0 +1,42 @@
+.example-container {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.td-color{
+  width: 25px;
+  height:25px;
+  margin-top:10px;
+}
+
+
+table tr {
+  text-align: center;
+}
+
+table th {
+  text-align: center;
+}
+
+mat-grid-tile {
+  background: lightblue;
+}
+
+table {
+  width: 100%;
+  max-width: 800px;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}

@@ -1,6 +1,45 @@
+//#region background-color
+
+.bg-purple {
+  background-color: #9c27b0;
+  color: white;
+}
+
+.bg-blue {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.bg-green {
+  background-color: #1fa310;
+  color: white;
+}
+
+.bg-yellow {
+  background-color: #f1f500;
+  color: black;
+}
+
+.bg-orange {
+  background-color: #c97520;
+  color: white;
+}
+
+.bg-red {
+  background-color: #cf2626;
+  color: white;
+}
+
+.bg-grey {
+  background-color: #626367;
+  color: white;
+}
+
+//#endregion
 
 
-//animaciones
+//#region animaciones
+
 .heartbeat {
   animation: heartbeat 1s ease-in-out 60 both
 }
@@ -168,3 +207,5 @@ $baby-blue: #f8faff;
     transform: scale(.5)
   }
 }
+
+//#endregion

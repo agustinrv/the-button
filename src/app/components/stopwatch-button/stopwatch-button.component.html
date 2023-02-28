@@ -1,4 +1,5 @@
-<button [class]="this.animation" mat-fab style="width: 25em; height:25em;" [style]="colorButton" (click)="stopTimer()" [disabled]="jugo">
+<button [class]="this.colorButton+' '+ this.animation  " mat-fab style="width: 25em; height:25em;" (click)="stopTimer()" >
+    <!-- <button [class]="this.animation +' '+ colorButton" mat-fab style="width: 25em; height:25em;" (click)="stopTimer()" [disabled]="jugo"></button> -->
     <div >
         <span style="font-size: 6em;">{{time}}s</span>
         <h2 *ngIf="!jugo">Clickeame {{contClick}} veces <br> para detener!</h2>

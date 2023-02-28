@@ -1,4 +1,4 @@
-<div class="container pt-3">
+<div class="container" style="padding-top: 10px">
 
     <div class="row">
         <div class="col-9" align="center" >
@@ -38,7 +38,7 @@
   
         <ng-container matColumnDef="color">
           <th mat-header-cell *matHeaderCellDef> Color </th>
-          <td mat-cell *matCellDef="let element"> <a mat-fab disabled  [style]="'background-color:'+element.color" class="td-color"></a> </td>
+          <td mat-cell *matCellDef="let element"> <a mat-fab disabled  [style]="'background-color:'+element.color.toLowerCase()" class="td-color"></a> </td>
         </ng-container>
       
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

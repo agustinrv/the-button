@@ -7,7 +7,7 @@ const routes: Routes = [
             redirectTo:"temporizador",
             pathMatch:"full"
           },
-          { path: 'temporizador', loadChildren: () => import('./timer/timer.module').then(m => m.TimerModule) }
+          { path: 'temporizador', loadChildren: () => import('./pages/timer/timer.module').then(m => m.TimerModule) }
   
 ];
 

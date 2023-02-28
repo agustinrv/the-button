@@ -72,9 +72,10 @@ export class StopwatchButtonComponent implements OnInit, AfterViewInit {
       this.animateButton();
       this.jugo = true;
       setTimeout(() => {
-        this.sendDataToTimer()
+        this.sendDataToTimer();
         this.timer();
         this.time = 60;
+        this.buttonColor();
       }, 2000);
     } else if (!this.jugo) {
       this.contClick--;
@@ -118,6 +119,7 @@ export class StopwatchButtonComponent implements OnInit, AfterViewInit {
 
         this.newUserTime.emit(userTime);
         this.time = 60;
+        this.buttonColor();
       }
     }, 1000);
   }

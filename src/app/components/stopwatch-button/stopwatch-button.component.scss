@@ -40,9 +40,7 @@
 
 //#region animaciones
 
-.heartbeat {
-  animation: heartbeat 1s ease-in-out 60 both
-}
+.heartbeat{-webkit-animation:heartbeat 1s ease-in-out infinite both;animation:heartbeat 1s ease-in-out infinite both}
 
 @keyframes heartbeat {
   from {

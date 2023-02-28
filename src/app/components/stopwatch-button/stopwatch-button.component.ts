@@ -65,28 +65,34 @@ export class StopwatchButtonComponent implements OnInit, AfterViewInit {
   }
 
   public stopTimer() {
+
     if (this.contClick == 1 || this.time == 0) {
       this.contClick--;
       clearInterval(this.timerInterval);
       this.animateButton();
       this.jugo = true;
       setTimeout(() => {
-        let userTime: UserTime = {
-          name: 'Tu',
-          time: this.time,
-          color: this.stopwatchService.getColor(this.time),
-        };
-
-        this.newUserTime.emit(userTime);
-        this.cambioJugo.emit(this.jugo);
-        localStorage.setItem('jugo', 'true');
-        localStorage.setItem('userTime', JSON.stringify(userTime));
+        this.sendDataToTimer()
         this.timer();
         this.time = 60;
       }, 2000);
     } else if (!this.jugo) {
       this.contClick--;
     }
+  }
+
+  private sendDataToTimer()
+  {
+    let userTime: UserTime = {
+      name: 'Tu',
+      time: this.time,
+      color: this.stopwatchService.getColor(this.time),
+    };
+
+    this.newUserTime.emit(userTime);
+    this.cambioJugo.emit(this.jugo);
+    localStorage.setItem('jugo', 'true');
+    localStorage.setItem('userTime', JSON.stringify(userTime));
   }
 
   private animateButton() {

@@ -1,3 +1,21 @@
+@media (min-width: 640px) {
+
+  .btn-responsive {
+    width: 25rem;
+    height: 25rem;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .btn-responsive {
+    width: 18rem;
+    height: 18rem;
+  }
+
+}
+
 //#region background-color
 
 .bg-purple {
@@ -40,7 +58,10 @@
 
 //#region animaciones
 
-.heartbeat{-webkit-animation:heartbeat 1s ease-in-out infinite both;animation:heartbeat 1s ease-in-out infinite both}
+.heartbeat {
+  -webkit-animation: heartbeat 1s ease-in-out infinite both;
+  animation: heartbeat 1s ease-in-out infinite both
+}
 
 @keyframes heartbeat {
   from {

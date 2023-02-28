@@ -2,6 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+          {
+            path:"",
+            redirectTo:"temporizador",
+            pathMatch:"full"
+          },
+          { path: 'temporizador', loadChildren: () => import('./timer/timer.module').then(m => m.TimerModule) }
   
 ];
 
